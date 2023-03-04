@@ -18,12 +18,8 @@ jobs:
         run: docker-compose build
 
       - name: Start services
-        uses: docker/compose-action@1.0.0
         working-directory: ./Individual_Assessment_1
-        with:
-          compose-file: docker-compose.yml
-          services: assessment, grobid 
-          command: up -d
+        run: docker-compose up -d
         
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
