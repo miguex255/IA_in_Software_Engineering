@@ -1,4 +1,3 @@
-[![Documentation Status](https://readthedocs.org/projects/pdf-analyzer-software/badge/?version=latest)](https://pdf-analyzer-software.readthedocs.io/en/latest/?badge=latest) [![DOI](https://zenodo.org/badge/609290837.svg)](https://zenodo.org/badge/latestdoi/609290837)
 
 # PDF analyzer software
 

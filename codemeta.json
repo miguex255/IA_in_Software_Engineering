@@ -1,0 +1,52 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/MIT",
+    "codeRepository": "git+https://github.com/miguex255/IA_in_Software_Engineering.git",
+    "dateCreated": "2023-03-03",
+    "datePublished": "2023-03-03",
+    "dateModified": "2023-03-04",
+    "downloadUrl": "https://github.com/miguex255/IA_in_Software_Engineering/archive/refs/tags/v1.0.0.zip",
+    "issueTracker": "https://github.com/miguex255/IA_in_Software_Engineering/issues",
+    "name": "PDF analyzer software",
+    "version": "1.0.0",
+    "description": "This is a PDF analyzer software that allows users who use it to obtain relevant data such as: \n* Get the keywords.\n* Visually see the number of images that the pdf contains.\n* The links that the pdf contains",
+    "applicationCategory": "Parsing",
+    "funder": {
+        "@type": "Organization",
+        "name": "Universidad Politécnica de Madrid"
+    },
+    "keywords": [
+        "pdf",
+        "parsing",
+        "grobid",
+        "python",
+        "docker"
+    ],
+    "programmingLanguage": [
+        "Python 3"
+    ],
+    "operatingSystem": [
+        "Linux",
+        "Windows"
+    ],
+    "softwareRequirements": [
+        "Python 3.10"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Miguel",
+            "familyName": "Yanez",
+            "email": "miguelantonioyanez@gmail.com"
+        }
+    ],
+    "contributor": [
+        {
+            "@type": "Person",
+            "givenName": "Miguel",
+            "familyName": "Yanez",
+            "email": "miguelantonioyanez@gmail.com"
+        }
+    ]
+}
