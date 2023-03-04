@@ -93,4 +93,4 @@ Once the containers have been executed, the following directories should contain
     * wordcloud-i.png: These are the graphical representations of the keywords founded in PDF number "i" in word cloud format.
     * report-date.html: This is the final analysis of all processed PDFs. The "-date" field represents the date on which the analysis was done. 
 ## Where to get help
-    If you have any issue with docker containers, you can find futher information in the following link: https://docs.docker.com
+If you have any issue with docker containers, you can find futher information in the following [link](https://docs.docker.com)
