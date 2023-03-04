@@ -19,13 +19,12 @@ jobs:
 
       - name: Start services
         uses: docker/compose-action@1.0.0
+        working-directory: ./Individual_Assessment_1
         with:
           compose-file: docker-compose.yml
-          service: assessment
-          service: grobid
+          services: assessment, grobid 
           command: up -d
-        working-directory: ./Individual_Assessment_1
-
+        
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
