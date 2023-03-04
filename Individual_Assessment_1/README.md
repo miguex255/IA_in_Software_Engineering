@@ -45,7 +45,7 @@ git clone https://github.com/miguex255/IA_in_Software_Engineering.git && cd IA_i
 cd Individual_Assessment_1
 ```
 
-* Place all your PDF into the PDFs folder.
+* Place all your PDF into the PDFs folder. (If you want to test the application, you will find 10 sample files inside the folder).
 * After that, depending on the operating system you are using, you need to execute one of the following commands:
 
   * For windows users, run the following command:
