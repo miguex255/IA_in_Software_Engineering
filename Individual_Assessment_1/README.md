@@ -41,8 +41,8 @@ cd Individual_Assessment_1
     * For Linux users, run the following command:
      ```bash
         ./run.sh
-      ```
-* Then the proccess will finished when you see the following message:
+    ```
+* Then, the process will be completed when the following message appears:
     ```bash
     Serving Flask app 'main'
     Debug mode: off
@@ -57,40 +57,40 @@ cd Individual_Assessment_1
 To close the server press CTRL+C in the terminal.
 ## Running example
 Once the containers have been executed, the following directories should contain the following files: 
-    ```bash
+```bash
     ─Individual_Assessment_1
     ├───PDFs
     ├───Script
-│   ├── static
-│   │   ├── figures-0.png
-│   │   ├── figures-1.png
-│   │   ├── figures-2.png
-│   │   ├── figures-3.png
-│   │   ├── figures-4.png
-│   │   ├── figures-5.png
-│   │   ├── figures-6.png
-│   │   ├── figures-7.png
-│   │   ├── figures-8.png
-│   │   ├── figures-9.png
-│   │   ├── jquery-3.5.1.min.js
-│   │   ├── style.css
-│   │   ├── wordcloud-0.png
-│   │   ├── wordcloud-1.png
-│   │   ├── wordcloud-2.png
-│   │   ├── wordcloud-3.png
-│   │   ├── wordcloud-4.png
-│   │   ├── wordcloud-5.png
-│   │   ├── wordcloud-6.png
-│   │   ├── wordcloud-7.png
-│   │   ├── wordcloud-8.png
-│   │   └── wordcloud-9.png
-│   ├── templates
-│   │   └── report-2023-03-04.html
+    ├── static
+    │   ├── figures-0.png
+    │   ├── figures-1.png
+    │   ├── figures-2.png
+    │   ├── figures-3.png
+    │   ├── figures-4.png
+    │   ├── figures-5.png
+    │   ├── figures-6.png
+    │   ├── figures-7.png
+    │   ├── figures-8.png
+    │   ├── figures-9.png
+    │   ├── jquery-3.5.1.min.js
+    │   ├── style.css
+    │   ├── wordcloud-0.png
+    │   ├── wordcloud-1.png
+    │   ├── wordcloud-2.png
+    │   ├── wordcloud-3.png
+    │   ├── wordcloud-4.png
+    │   ├── wordcloud-5.png
+    │   ├── wordcloud-6.png
+    │   ├── wordcloud-7.png
+    │   ├── wordcloud-8.png
+    │   └── wordcloud-9.png
+    ├── templates
+    │   └── report-2023-03-04.html
     └───test
-    ```
+```
 * Elements:
     * figures-i.png: These are the histograms that represent the number of images present in PDF number "i".
     * wordcloud-i.png: These are the graphical representations of the keywords founded in PDF number "i" in word cloud format.
     * report-date.html: This is the final analysis of all processed PDFs. The "-date" field represents the date on which the analysis was done. 
 ## Where to get help
-    If you have any issue with docker containers, you can find futher information in the following [link](https://docs.docker.com)
+    If you have any issue with docker containers, you can find futher information in the following link: https://docs.docker.com
