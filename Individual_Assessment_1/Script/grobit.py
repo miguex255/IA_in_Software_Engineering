@@ -52,11 +52,12 @@ for filename in os.listdir('/app/PDFs/'):
         print("Grobit service is unreachable")
         sys.exit(1)
     soup = BeautifulSoup(grobit_file, "xml")
-    link_tags = soup.find_all('ref')
-    figure_count = len(soup.find_all("figure")) + len(soup.find_all("ref", attrs={"type": "figure"}))
+    link_tags = soup.find_all('ref') + soup.find_all('ptr')
+    figure_count = len(soup.find_all("figure")) if  len(soup.find_all("figure")) > len(soup.find_all("ref", attrs={"type": "figure"}))\
+                    else len(soup.find_all("ref", attrs={"type": "figure"}))
     links = [str(link.get('target')) for link in link_tags\
                 if str(link.get('target')) != 'https://github.com/kermitt2/grobid' and \
-                not(re.compile("#*").match(str(link.get('target'))))]
+                not(re.compile("#b*").match(str(link.get('target')))) and str(link.get('target')) != 'None']
     if soup.find('keywords') != None:
         keywords = soup.find('keywords').text 
     else:

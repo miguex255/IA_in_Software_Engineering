@@ -61,13 +61,16 @@ cd Individual_Assessment_1
   ```
 * Then, the process will be completed when the following message appears:
 
-  ```bash
+```bash
   Serving Flask app 'main'
   Debug mode: off
   WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-   Running on http://127.0.0.1:8080
+  Running on all addresses (0.0.0.0)
+  Running on http://127.0.0.1:8080
+  Running on http://172.17.0.2:8080
   Press CTRL+C to quit
-  ```
+```
+
 * Finally, you will be able to view the results of your analysis in your web browser at the following URL:
 
   ```bash

@@ -10,4 +10,8 @@ docker run --rm -it -v %cd%\templates\:/app/templates -v %cd%\static\:/app/stati
 
 docker stop grobid
 
-python main.py
+docker rm miguelynz/flask
+
+docker build -t miguelynz/flask -f flask\dockerfile .
+
+docker run --rm -it -p 8080:8080 --name flask miguelynz/flask
