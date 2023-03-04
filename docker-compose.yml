@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  grobid:
+    image: lfoppiano/grobid:0.7.2
+    ports:
+      - "8070:8070"
+  assessment:
+    build: ./Individual_Assessment_1
+    volumes:
+      - "./Individual_Assessment_1/templates:/app/templates"
+      - "./Individual_Assessment_1/static:/app/static"
+    depends_on:
+      - grobid
+    network_mode: host
+    restart: on-failure
