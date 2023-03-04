@@ -31,6 +31,7 @@ jobs:
           pip install pytest
           
       - name: Install dependencies
+        working-directory: ./Individual_Assessment_1
         run: |
           pip install --no-cache-dir -r requirements.txt
 
