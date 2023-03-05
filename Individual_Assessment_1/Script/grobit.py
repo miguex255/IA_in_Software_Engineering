@@ -80,7 +80,7 @@ for filename in os.listdir('/app/PDFs/'):
     img = f"\n\t<img src=\"{{{{ url_for('static', filename='wordcloud-{i}.png')}}}}\" width=\"400\" height=\"400\" class=\"img-thumbnail\">"
     html_content = html_content + img
     # Create a bar plot
-    p = "\n\t<p class=\"h2\">2) Number of figures founded</p>"
+    p = "\n\t<p class=\"h2\">2) Number of figures found</p>"
     html_content = html_content + p
     fig, ax = plt.subplots()
     ax.bar("Figures", figure_count)
