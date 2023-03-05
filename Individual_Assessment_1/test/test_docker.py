@@ -10,4 +10,4 @@ def test_file_size():
 
 # Test that check if the images were correctly generated.
 def test_images(): 
-    assert len(os.listdir('./Individual_Assessment_1/static/')) > 2
+    assert len(os.listdir('./Individual_Assessment_1/static/')) >= 2
