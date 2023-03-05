@@ -58,6 +58,10 @@ for filename in os.listdir('/app/PDFs/'):
     links = [str(link.get('target')) for link in link_tags\
                 if str(link.get('target')) != 'https://github.com/kermitt2/grobid' and \
                 not(re.compile("#b*").match(str(link.get('target')))) and str(link.get('target')) != 'None']
+    links.extend(str(link) if not(re.compile("at 0x*").match(str(link))) else 'None' for p_text in soup.find_all('p')\
+                for link in list(re.compile(r"https?://\S+|www.\S+").findall(p_text.text)) \
+                if list(re.compile(r"https?://\S+|www.\S+").findall(p_text.text)) != [] \
+                and list(re.compile(r"https?://\S+|www.\S+").findall(p_text.text)) != [''])
     if soup.find('keywords') != None:
         keywords = soup.find('keywords').text 
     else:

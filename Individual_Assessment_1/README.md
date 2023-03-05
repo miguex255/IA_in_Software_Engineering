@@ -51,13 +51,13 @@ cd Individual_Assessment_1
   * For windows users, run the following command:
 
   ```bash
-     run.bat
+  run.bat
   ```
 
   * For Linux users, run the following command:
 
   ```bash
-     ./run.sh
+  ./run.sh
   ```
 * Then, the process will be completed when the following message appears:
 
@@ -78,6 +78,21 @@ cd Individual_Assessment_1
   ```
 
 To close the server press CTRL+C in the terminal.
+
+##### If you want to process another batch of PDF
+* Put the new batch of PDF in the PDFs folder.
+* After that, you need to execute one of the following commands:
+  * For windows users, run the following command:
+
+  ```bash
+  batch_PDF.bat
+  ```
+
+  * For Linux users, run the following command:
+
+  ```bash
+  ./batch_PDF.sh
+  ```
 
 ## Running example
 
@@ -123,3 +138,5 @@ Once the containers have been executed, the following directories should contain
 ## Where to get help
 
 If you have any issue with docker containers, you can find futher information in the following [link](https://docs.docker.com)
+
+Otherwise, you can contact the main author of this repository by email: [Miguel Yanez](m.yanez@alumnos.upm.es)
