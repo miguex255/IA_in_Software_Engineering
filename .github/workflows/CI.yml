@@ -20,10 +20,11 @@ jobs:
       - name: Start services and copy outputs from assessment_container
         working-directory: ./Individual_Assessment_1
         run: |
-          mkdir -p static && mkdir -p templates
+          mkdir -p static 
+          mkdir -p templates
           docker-compose up -d
-          docker cp assessment_container:/app/static/. static/
-          docker cp assessment_container:/app/templates/. templates/  
+          docker cp assessment_container:/app/static ./static
+          docker cp assessment_container:/app/templates ./templates  
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
