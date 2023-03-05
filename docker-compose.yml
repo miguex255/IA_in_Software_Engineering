@@ -10,6 +10,7 @@ services:
     volumes:
       - "./Individual_Assessment_1/templates:/app/templates"
       - "./Individual_Assessment_1/static:/app/static"
+    container_name: assessment_container
     depends_on:
       - grobid
     network_mode: host
