@@ -23,8 +23,8 @@ jobs:
           mkdir -p static 
           mkdir -p templates
           docker-compose up -d
-          docker cp assessment_container:/app/static ./static
-          docker cp assessment_container:/app/templates ./templates  
+          docker cp assessment_container:/app/static static/
+          docker cp assessment_container:/app/templates templates/  
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
@@ -39,6 +39,7 @@ jobs:
         working-directory: ./Individual_Assessment_1
         run: |
           pip install --no-cache-dir -r requirements.txt
+
       - name: Run tests
         run: |
           pytest
