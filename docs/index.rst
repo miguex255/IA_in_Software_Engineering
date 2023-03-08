@@ -11,7 +11,7 @@ This is a PDF analyzer software that allows users who use it to obtain relevant 
 
 ## Requirements
 
-* [Docker](https://docs.docker.com/get-docker/)
+* [Docker](https://docs.docker.com/get-docker/) 
 
 ## Installation instructions
 
