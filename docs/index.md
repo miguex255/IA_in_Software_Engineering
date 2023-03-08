@@ -1,4 +1,3 @@
-[![Documentation Status](https://readthedocs.org/projects/pdf-analyzer-software/badge/?version=latest)](https://pdf-analyzer-software.readthedocs.io/en/latest/?badge=latest) [![DOI](https://zenodo.org/badge/609290837.svg)](https://zenodo.org/badge/latestdoi/609290837)
 
 # PDF analyzer software
 
@@ -45,32 +44,29 @@ git clone https://github.com/miguex255/IA_in_Software_Engineering.git && cd IA_i
 cd Individual_Assessment_1
 ```
 
-* Place all your PDF into the PDFs folder. (If you want to test the application, you will find 10 sample files inside the folder).
+* Place all your PDF into the PDFs folder.
 * After that, depending on the operating system you are using, you need to execute one of the following commands:
 
   * For windows users, run the following command:
 
   ```bash
-  run.bat
+     run.bat
   ```
 
   * For Linux users, run the following command:
 
   ```bash
-  ./run.sh
+     ./run.sh
   ```
 * Then, the process will be completed when the following message appears:
 
-```bash
+  ```bash
   Serving Flask app 'main'
   Debug mode: off
   WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-  Running on all addresses (0.0.0.0)
-  Running on http://127.0.0.1:8080
-  Running on http://172.17.0.2:8080
+   Running on http://127.0.0.1:8080
   Press CTRL+C to quit
-```
-
+  ```
 * Finally, you will be able to view the results of your analysis in your web browser at the following URL:
 
   ```bash
@@ -78,21 +74,6 @@ cd Individual_Assessment_1
   ```
 
 To close the server press CTRL+C in the terminal.
-
-##### If you want to process another batch of PDF
-* Put the new batch of PDF in the PDFs folder.
-* After that, you need to execute one of the following commands:
-  * For windows users, run the following command:
-
-  ```bash
-  batch_PDF.bat
-  ```
-
-  * For Linux users, run the following command:
-
-  ```bash
-  ./batch_PDF.sh
-  ```
 
 ## Running example
 
@@ -134,10 +115,7 @@ Once the containers have been executed, the following directories should contain
   * figures-i.png: These are the histograms that represent the number of images present in PDF number "i".
   * wordcloud-i.png: These are the graphical representations of the keywords founded in PDF number "i" in word cloud format.
   * report-date.html: This is the final analysis of all processed PDFs. The "-date" field represents the date on which the analysis was done.
-## Workflow
-![plot](./docs/Workflow_assessment_1.png)
+
 ## Where to get help
 
 If you have any issue with docker containers, you can find futher information in the following [link](https://docs.docker.com)
-
-Otherwise, you can contact the main author of this repository by email: [Miguel Yanez](m.yanez@alumnos.upm.es)
